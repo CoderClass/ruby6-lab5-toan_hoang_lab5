@@ -1,0 +1,15 @@
+<h1>asd</h1>
+
+<%= form_for Message.new do |f|%>
+	
+		<%= f.label :body %>	
+		<%= f.text_field :body %>
+		<%= f.submit "Send Message" %>
+	
+
+<% end %>
+
+<div class="messages">
+	<%= render @messages %>
+</div>
+
